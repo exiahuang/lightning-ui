@@ -1,0 +1,23 @@
+default:
+  - build
+
+build:
+  - clean
+  - standard
+  - concat
+  - uglify
+  - copy
+
+watch-task:
+  - clean
+  - standard
+  - concat
+  - uglify
+  - copyall
+
+umd:
+  - umd
+
+serve:
+  - browserSync
+

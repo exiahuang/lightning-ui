@@ -1,0 +1,43 @@
+---
+layout: slds-layout
+title: Collapse
+---
+<div class="site-content">
+  <div class="slds-container_medium">
+    <h1 class="site-text-heading--large slds-p-top--xx-large">Example Carousel</h1>
+    <main>
+      <!-- Trigger the modal with a button -->
+      <h1>Simple Collapsible</h1>
+      <p>Click on the button to toggle between showing and hiding content.</p><br/>
+      <button type="button" class="slds-button slds-button_brand" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+      <br/>
+      <br/>
+      <div id="demo" class="collapse">
+          <div class="slds-box">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br/>
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/>
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
+          </div>
+      </div>
+      
+    </main>
+  </div>
+    
+  <div class="slds-container_large">
+      <h1 class="site-text-heading--large slds-p-top--xx-large">Usage</h1>
+
+{% highlight html %}
+<button type="button" class="slds-button slds-button_brand" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+<br/>
+<br/>
+<div id="demo" class="collapse">
+    <div class="slds-box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br/>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/>
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
+    </div>
+</div>
+{% endhighlight %}
+
+  </div>
+</div>

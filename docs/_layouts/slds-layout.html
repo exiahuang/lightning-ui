@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    {% include slds/header.html %}
+</head>
+<body>
+    <div class="site-page-wrapper">
+        <div>
+          <div class="site-skip-content site-skip-content_navigation slds-x-small-show-only">
+            <a href="#navigation">Jump to Navigation</a>
+          </div>
+          <section class="site site-sidebar slds-order_2">
+            {% include slds/navigation.html %}
+          </section>
+          <main class="site-main slds-order_1" role="main" id="content">
+                <header class="site site-masthead slds-grid slds-wrap">
+                  <div class="site-masthead-title slds-has-flexi-truncate slds-align-middle">
+                    <span class="slds-hide docsearch-category">{{ page.title }}</span>
+                    <h1 title="{{ page.title }}">{{ page.title }}</h1></div>
+                </header>
+                {{ content }}
+          </main>
+          {% include footer.html %}
+        </div>
+    </div>
+</body>
+</html>

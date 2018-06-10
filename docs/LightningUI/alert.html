@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lightning-UI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="author" content="Exia.huang">
+
+    <!-- Lightning-UI core CSS -->
+    <link href="../dist/styles/lightning.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <!-- <link href="{{ site.baseurl }}../dist/css/docs.css" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../dist/js/vendor/jquery.min.js"><\/script>')</script>
+    
+</head>
+<body>
+　<div id="header">
+　　<!--ここにインクルード-->
+　</div>
+
+
+<div class="main-content">
+    <div class="slds-grid slds-wrap">
+      <aside class="slds-col slds-size_1-of-4">
+  　     <div id="sidebar">
+          <div class="demo-only" style="width: 320px;">
+              <nav class="slds-nav-vertical" aria-label="Sub page">
+                <div class="slds-form-element slds-p-horizontal_large">
+                  <label class="slds-form-element__label slds-assistive-text" for="search-bar">Filter navigation items</label>
+                  <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                    <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/icons/utility-sprite/svg/symbols.svg#search" />
+                    </svg>
+                    <input type="search" id="search-bar" placeholder="Quick Find" class="slds-input" />
+                  </div>
+                </div>
+                <div class="slds-nav-vertical__section">
+                  <h2 class="slds-nav-vertical__title slds-text-title_caps">My Menu</h2>
+                  <ul id="side-bar-menu" >
+                      <li class="slds-nav-vertical__item"><a href="/examples/lightning-table.html" class="slds-nav-vertical__action" aria-describedby="entity-header">DataTable</a></li>
+                      <li class="slds-nav-vertical__item"><a href="/examples/modal.html" class="slds-nav-vertical__action" aria-describedby="entity-header">Modal</a></li>
+                      
+                  </ul>
+                </div>
+              </nav>
+            </div>
+      　</div>
+      </aside>
+      <main class="slds-col slds-size_3-of-4">
+          <div class="slds-box">
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_info" role="alert">
+                <span class="slds-assistive-text">info</span>
+                <span class="slds-icon_container slds-icon-utility-user slds-m-right_x-small" title="Description of icon when needed">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#user" />
+                  </svg>
+                </span>
+                <h2>Logged in as John Smith (johnsmith@acme.com). <a href="javascript:void(0);">Log out</a></h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#close" />
+                  </svg>
+                  <span class="slds-assistive-text">Close</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="slds-box">
+              <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+                <span class="slds-assistive-text">warning</span>
+                <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="Description of icon when needed">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#warning" />
+                  </svg>
+                </span>
+                <h2>Your browser is outdated. Your Salesforce experience may be degraded. <a href="javascript:void(0);">More Information</a></h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#close" />
+                  </svg>
+                  <span class="slds-assistive-text">Close</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="slds-box">
+              <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                <span class="slds-assistive-text">error</span>
+                <span class="slds-icon_container slds-icon-utility-ban slds-m-right_x-small" title="Description of icon when needed">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#ban" />
+                  </svg>
+                </span>
+                <h2>Your browser is currently not supported. Your Salesforce may be degraded. <a href="javascript:void(0);">More Information</a></h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#close" />
+                  </svg>
+                  <span class="slds-assistive-text">Close</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="slds-box">
+              <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_offline" role="alert">
+                <span class="slds-assistive-text">offline</span>
+                <span class="slds-icon_container slds-icon-utility-offline slds-m-right_x-small" title="Description of icon when needed">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#offline" />
+                  </svg>
+                </span>
+                <h2>You are in offline mode. <a href="javascript:void(0);">More Information</a></h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#close" />
+                  </svg>
+                  <span class="slds-assistive-text">Close</span>
+                </button>
+              </div>
+            </div>
+      </main>
+    </div>
+  </div>
+  
+
+
+　<div id="footer">
+    　　<!--ここにインクルード-->
+  </div>
+
+  
+  <script src="../js/index.js"></script>
+  <script src="../dist/lightning-ui.js"></script>
+</body>
+</html>

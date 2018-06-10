@@ -1,0 +1,27 @@
+<!-- Footer
+================================================== -->
+<footer class="site site-contentinfo slds-order_3">
+    <div class="slds-grid slds-wrap slds-text-body_small slds-grid_vertical-align-center" role="contentinfo">
+        <p class="slds-p-horizontal_x-large slds-size_1-of-1 slds-shrink-none slds-large-size_3-of-4">
+                Copyright © 2015-present Salesforce.
+        <a href="http://salesforce.com/company/legal/intellectual.jsp">All rights reserved</a> <br/>
+        <br>
+        Version 2.5.0. Last Updated on January 9th 2018, 8:18 pm.
+        </p>
+        <p class="slds-p-horizontal--x-large slds-text-align--right slds-size--1-of-1 slds-shrink-none slds-large-size--1-of-4"><a class="site-social-twitter" href="http://twitter.com/exiasfdc" title="Follow @exiasfdc on Twitter">Twitter</a><a class="site-social-dribbble" href="http://dribbble.com/salesforce" title="Find us on Dribbble">Dribbble</a><a class="site-social-github"
+        href="https://github.com/exiahuang/lightning-ui" title="Get the code on GitHub">GitHub Repository</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+{% if site.github %}
+  <script src="{{ site.baseurl }}/dist/lightning-ui.min.js"></script>
+{% else %}
+  <script src="{{ site.baseurl }}/dist/lightning-ui.js"></script>
+{% endif %}
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>

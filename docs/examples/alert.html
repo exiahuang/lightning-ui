@@ -1,0 +1,98 @@
+---
+layout: slds-layout
+title: Alert
+---
+
+<div class="site-content">
+  <div class="slds-container_medium">
+      <h1 class="site-text-heading--large slds-p-top--xx-large">Example Alerts</h1>
+      <main>
+          <div class="slds-box">
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_info" role="alert">
+                <span class="slds-assistive-text">info</span>
+                <span class="slds-icon_container slds-icon-utility-user slds-m-right_x-small" title="Description of icon when needed">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#user" />
+                  </svg>
+                </span>
+                <h2>Logged in as John Smith (johnsmith@acme.com). <a href="javascript:void(0);">Log out</a></h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#close" />
+                  </svg>
+                  <span class="slds-assistive-text">Close</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="slds-box">
+              <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+                <span class="slds-assistive-text">warning</span>
+                <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="Description of icon when needed">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#warning" />
+                  </svg>
+                </span>
+                <h2>Your browser is outdated. Your Salesforce experience may be degraded. <a href="javascript:void(0);">More Information</a></h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#close" />
+                  </svg>
+                  <span class="slds-assistive-text">Close</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="slds-box">
+              <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                <span class="slds-assistive-text">error</span>
+                <span class="slds-icon_container slds-icon-utility-ban slds-m-right_x-small" title="Description of icon when needed">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#ban" />
+                  </svg>
+                </span>
+                <h2>Your browser is currently not supported. Your Salesforce may be degraded. <a href="javascript:void(0);">More Information</a></h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#close" />
+                  </svg>
+                  <span class="slds-assistive-text">Close</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="slds-box">
+              <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_offline" role="alert">
+                <span class="slds-assistive-text">offline</span>
+                <span class="slds-icon_container slds-icon-utility-offline slds-m-right_x-small" title="Description of icon when needed">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#offline" />
+                  </svg>
+                </span>
+                <h2>You are in offline mode. <a href="javascript:void(0);">More Information</a></h2>
+                <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#close" />
+                  </svg>
+                  <span class="slds-assistive-text">Close</span>
+                </button>
+              </div>
+            </div>
+      </main>
+  </div>
+
+
+  <div class="slds-container_medium">
+      <h1 class="site-text-heading--large slds-p-top--xx-large">Usage</h1>
+      Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality. Closing an alert removes it from the DOM.
+
+{% highlight html %}
+<button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" data-dismiss="alert">
+  <svg class="slds-button__icon" aria-hidden="true">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#close" />
+  </svg>
+  <span class="slds-assistive-text">Close</span>
+</button>
+{% endhighlight %}
+  </div>
+</div>

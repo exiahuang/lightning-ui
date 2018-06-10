@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lightning-UI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="author" content="Exia.huang">
+
+    <!-- Lightning-UI core CSS -->
+    <link href="../dist/styles/lightning.css" rel="stylesheet">
+    <!-- <link href="../assets/css/docs.css" rel="stylesheet"> -->
+    <!-- <link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/jquery.min.js"><\/script>')</script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="site-page-wrapper">
+        <div>
+        <div class="site-skip-content site-skip-content_navigation slds-x-small-show-only"><a href="#navigation">Jump to Navigation</a></div>
+        <section class="site site-sidebar slds-order_2">
+            <div class="site-banner">
+                <div class="site-skip-content"><a href="#content" class="slds-assistive-text slds-assistive-text_focus">Skip to Content</a></div>
+                <div class="site-logo"><a href="/"><span class="slds-assistive-text">Salesforce</span></a></div>
+                <form class="slds-grid site-search slds-grid_vertical-align-center" novalidate="">
+                <div role="search" class="site-searchbox__wrapper slds-col">
+                    <label for="search-input-2" class="slds-assistive-text">Search</label><span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="text" id="search-input-2" class="site-searchbox__input slds-input site-search-input ds-input" name="search" placeholder="Search" autocomplete="off" required="" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Salesforce Sans&quot;, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre></span>
+                    <button
+                    type="submit" class="slds-assistive-text" tabindex="-1">Submit your search query</button>
+                </div>
+                <!-- react-empty: 713 -->
+                </form>
+            </div>
+            <div id="site-navigation" class="site site-navigation site-navigation--has-search">
+                <nav id="navigation" role="navigation" tabindex="-1" aria-label="Main navigation">
+                <ul class="slds-list--vertical slds-has-block-links">
+                    <li class="list__item slds-is-selected slds-is-active"><a href="/getting-started"><span class="slds-media slds-media--center"><span class="slds-media__body">Getting Started</span></span></a></li>
+                    <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Platforms</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                    <ul
+                    class="slds-list--vertical slds-has-block-links slds-is-nested">
+                        <li class="list__item"><a href="/platforms/visualforce"><span class="slds-media slds-media--center"><span class="slds-media__body">Visualforce</span></span></a></li>
+                        <li class="list__item"><a href="/platforms/lightning"><span class="slds-media slds-media--center"><span class="slds-media__body">Lightning</span></span></a></li>
+                        <li class="list__item"><a href="/platforms/Heroku"><span class="slds-media slds-media--center"><span class="slds-media__body">Heroku</span></span></a></li>
+                        <li class="list__item"><a href="/platforms/Android"><span class="slds-media slds-media--center"><span class="slds-media__body">Android</span></span></a></li>
+                        <li class="list__item"><a href="/platforms/ios"><span class="slds-media slds-media--center"><span class="slds-media__body">iOS</span></span></a></li>
+                        <li class="list__item"><a href="/platforms/windows-phone"><span class="slds-media slds-media--center"><span class="slds-media__body">Windows Phone</span></span></a></li>
+                </ul>
+                </li>
+                <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Guidelines</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                    <ul
+                    class="slds-list--vertical slds-has-block-links slds-is-nested">
+                    <li class="list__item"><a href="/guidelines/overview"><span class="slds-media slds-media--center"><span class="slds-media__body">Overview</span></span></a></li>
+                    <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Animation</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                        <ul
+                        class="slds-list--vertical slds-has-block-links slds-is-nested">
+                        <li class="list__item"><a href="/guidelines/animation/gallery"><span class="slds-media slds-media--center"><span class="slds-media__body">Gallery</span></span></a></li>
+                        <li class="list__item"><a href="/guidelines/animation/styleguidelines"><span class="slds-media slds-media--center"><span class="slds-media__body">Style Guidelines</span></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="list__item"><a href="/guidelines/color"><span class="slds-media slds-media--center"><span class="slds-media__body">Color</span></span></a></li>
+                    <li class="list__item"><a href="/guidelines/data-entry"><span class="slds-media slds-media--center"><span class="slds-media__body">Data Entry</span></span></a></li>
+                    <li class="list__item"><a href="/guidelines/displaying-data"><span class="slds-media slds-media--center"><span class="slds-media__body">Displaying Data</span></span></a></li>
+                    <li class="list__item"><a href="/guidelines/layout"><span class="slds-media slds-media--center"><span class="slds-media__body">Layout</span></span></a></li>
+                    <li class="list__item"><a href="/guidelines/loading"><span class="slds-media slds-media--center"><span class="slds-media__body">Loading</span></span></a></li>
+                    <li class="list__item"><a href="/guidelines/localization"><span class="slds-media slds-media--center"><span class="slds-media__body">Localization</span></span></a></li>
+                    <li class="list__item"><a href="/guidelines/markup-and-style"><span class="slds-media slds-media--center"><span class="slds-media__body">Markup and Style</span></span></a></li>
+                    <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Messaging</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                        <ul
+                        class="slds-list--vertical slds-has-block-links slds-is-nested">
+                        <li class="list__item"><a href="/guidelines/messaging/overview"><span class="slds-media slds-media--center"><span class="slds-media__body">Overview</span></span></a></li>
+                        <li class="list__item"><a href="/guidelines/messaging/types"><span class="slds-media slds-media--center"><span class="slds-media__body">Types</span></span></a></li>
+                        <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Components</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                            <ul
+                            class="slds-list--vertical slds-has-block-links slds-is-nested">
+                            <li class="list__item"><a href="/guidelines/messaging/components/overview"><span class="slds-media slds-media--center"><span class="slds-media__body">Overview</span></span></a></li>
+                            <li class="list__item"><a href="/guidelines/messaging/components/banners"><span class="slds-media slds-media--center"><span class="slds-media__body">Banners</span></span></a></li>
+                            <li class="list__item"><a href="/guidelines/messaging/components/inline-text"><span class="slds-media slds-media--center"><span class="slds-media__body">Inline Text</span></span></a></li>
+                            <li class="list__item"><a href="/guidelines/messaging/components/illustration-inline-text"><span class="slds-media slds-media--center"><span class="slds-media__body">Illustration &amp; Inline Text</span></span></a></li>
+                            <li class="list__item"><a href="/guidelines/messaging/components/modals"><span class="slds-media slds-media--center"><span class="slds-media__body">Modals</span></span></a></li>
+                            <li class="list__item"><a href="/guidelines/messaging/components/notices"><span class="slds-media slds-media--center"><span class="slds-media__body">Notices</span></span></a></li>
+                            <li class="list__item"><a href="/guidelines/messaging/components/notifications"><span class="slds-media slds-media--center"><span class="slds-media__body">Notifications</span></span></a></li>
+                            <li class="list__item"><a href="/guidelines/messaging/components/popovers"><span class="slds-media slds-media--center"><span class="slds-media__body">Popovers</span></span></a></li>
+                            <li class="list__item"><a href="/guidelines/messaging/components/toasts"><span class="slds-media slds-media--center"><span class="slds-media__body">Toasts</span></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="list__item"><a href="/guidelines/messaging/states"><span class="slds-media slds-media--center"><span class="slds-media__body">States</span></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Search</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                        <ul
+                        class="slds-list--vertical slds-has-block-links slds-is-nested">
+                        <li class="list__item"><a href="/guidelines/search/global"><span class="slds-media slds-media--center"><span class="slds-media__body">Global Search</span></span></a></li>
+                        <li class="list__item"><a href="/guidelines/search/in-context"><span class="slds-media slds-media--center"><span class="slds-media__body">In-Context Search</span></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="list__item"><a href="/guidelines/navigation"><span class="slds-media slds-media--center"><span class="slds-media__body">Navigation</span></span></a></li>
+                    <li class="list__item"><a href="/guidelines/typography"><span class="slds-media slds-media--center"><span class="slds-media__body">Typography</span></span></a></li>
+                    <li class="list__item"><a href="/guidelines/voice-and-tone"><span class="slds-media slds-media--center"><span class="slds-media__body">Voice and Tone</span></span></a></li>
+                    </ul>
+                </li>
+                <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Accessibility</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                    <ul
+                    class="slds-list--vertical slds-has-block-links slds-is-nested">
+                    <li class="list__item"><a href="/accessibility/overview"><span class="slds-media slds-media--center"><span class="slds-media__body">Overview</span></span></a></li>
+                    <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Patterns</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                        <ul
+                        class="slds-list--vertical slds-has-block-links slds-is-nested">
+                        <li class="list__item"><a href="/accessibility/patterns/overview"><span class="slds-media slds-media--center"><span class="slds-media__body">Overview</span></span></a></li>
+                        <li class="list__item"><a href="/accessibility/patterns/accordion"><span class="slds-media slds-media--center"><span class="slds-media__body">Accordion</span></span></a></li>
+                        <li class="list__item"><a href="/accessibility/patterns/listbox"><span class="slds-media slds-media--center"><span class="slds-media__body">Listbox</span></span></a></li>
+                        <li class="list__item"><a href="/accessibility/patterns/menu"><span class="slds-media slds-media--center"><span class="slds-media__body">Menu</span></span></a></li>
+                        <li class="list__item"><a href="/accessibility/patterns/togglebutton"><span class="slds-media slds-media--center"><span class="slds-media__body">Toggle Button</span></span></a></li>
+                        <li class="list__item"><a href="/accessibility/patterns/tooltip"><span class="slds-media slds-media--center"><span class="slds-media__body">Tooltip</span></span></a></li>
+                        </ul>
+                    </li>
+                    <li class="list__item"><a href="/accessibility/text-on-backgrounds"><span class="slds-media slds-media--center"><span class="slds-media__body">Text on Backgrounds</span></span></a></li>
+                    </ul>
+                </li>
+                <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Components</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                    <ul
+                    class="slds-list--vertical slds-has-block-links slds-is-nested">
+                    <li class="list__item"><a href="/components/accordion"><span class="slds-media slds-media--center"><span class="slds-media__body">Accordion</span></span></a></li>
+                    <li class="list__item"><a href="/components/activity-timeline"><span class="slds-media slds-media--center"><span class="slds-media__body">Activity Timeline</span></span></a></li>
+                    <li class="list__item"><a href="/components/alert"><span class="slds-media slds-media--center"><span class="slds-media__body">Alert</span></span></a></li>
+                    <li class="list__item"><a href="/components/app-launcher"><span class="slds-media slds-media--center"><span class="slds-media__body">App Launcher</span></span></a></li>
+                    <li class="list__item"><a href="/components/avatar"><span class="slds-media slds-media--center"><span class="slds-media__body">Avatar</span></span></a></li>
+                    <li class="list__item"><a href="/components/badges"><span class="slds-media slds-media--center"><span class="slds-media__body">Badges</span></span></a></li>
+                    <li class="list__item"><a href="/components/brand-band"><span class="slds-media slds-media--center"><span class="slds-media__body">Brand Band</span></span></a></li>
+                    <li class="list__item"><a href="/components/breadcrumbs"><span class="slds-media slds-media--center"><span class="slds-media__body">Breadcrumbs</span></span></a></li>
+                    <li class="list__item"><a href="/components/button-groups"><span class="slds-media slds-media--center"><span class="slds-media__body">Button Groups</span></span></a></li>
+                    <li class="list__item"><a href="/components/button-icons"><span class="slds-media slds-media--center"><span class="slds-media__body">Button Icons</span></span></a></li>
+                    <li class="list__item"><a href="/components/buttons"><span class="slds-media slds-media--center"><span class="slds-media__body">Buttons</span></span></a></li>
+                    <li class="list__item"><a href="/components/cards"><span class="slds-media slds-media--center"><span class="slds-media__body">Cards</span></span></a></li>
+                    <li class="list__item"><a href="/components/carousel"><span class="slds-media slds-media--center"><span class="slds-media__body">Carousel</span></span></a></li>
+                    <li class="list__item"><a href="/components/chat"><span class="slds-media slds-media--center"><span class="slds-media__body">Chat</span></span></a></li>
+                    <li class="list__item"><a href="/components/checkbox"><span class="slds-media slds-media--center"><span class="slds-media__body">Checkbox</span></span></a></li>
+                    <li class="list__item"><a href="/components/checkbox-button"><span class="slds-media slds-media--center"><span class="slds-media__body">Checkbox Button</span></span></a></li>
+                    <li class="list__item"><a href="/components/checkbox-button-group"><span class="slds-media slds-media--center"><span class="slds-media__body">Checkbox Button Group</span></span></a></li>
+                    <li class="list__item"><a href="/components/checkbox-toggle"><span class="slds-media slds-media--center"><span class="slds-media__body">Checkbox Toggle</span></span></a></li>
+                    <li class="list__item"><a href="/components/color-picker"><span class="slds-media slds-media--center"><span class="slds-media__body">Color Picker</span></span></a></li>
+                    <li class="list__item"><a href="/components/combobox"><span class="slds-media slds-media--center"><span class="slds-media__body">Combobox</span></span></a></li>
+                    <li class="list__item"><a href="/components/data-tables"><span class="slds-media slds-media--center"><span class="slds-media__body">Data Tables</span></span></a></li>
+                    <li class="list__item"><a href="/components/datepickers"><span class="slds-media slds-media--center"><span class="slds-media__body">Datepickers</span></span></a></li>
+                    <li class="list__item"><a href="/components/datetime-picker"><span class="slds-media slds-media--center"><span class="slds-media__body">Datetime Picker</span></span></a></li>
+                    <li class="list__item"><a href="/components/docked-composer"><span class="slds-media slds-media--center"><span class="slds-media__body">Docked Composer</span></span></a></li>
+                    <li class="list__item"><a href="/components/docked-form-footer"><span class="slds-media slds-media--center"><span class="slds-media__body">Docked Form Footer</span></span></a></li>
+                    <li class="list__item"><a href="/components/docked-utility-bar"><span class="slds-media slds-media--center"><span class="slds-media__body">Docked Utility Bar</span></span></a></li>
+                    <li class="list__item"><a href="/components/dueling-picklist"><span class="slds-media slds-media--center"><span class="slds-media__body">Dueling Picklist</span></span></a></li>
+                    <li class="list__item"><a href="/components/dynamic-icons"><span class="slds-media slds-media--center"><span class="slds-media__body">Dynamic Icons</span></span></a></li>
+                    <li class="list__item"><a href="/components/dynamic-menu"><span class="slds-media slds-media--center"><span class="slds-media__body">Dynamic Menu</span></span></a></li>
+                    <li class="list__item"><a href="/components/expandable-section"><span class="slds-media slds-media--center"><span class="slds-media__body">Expandable Section</span></span></a></li>
+                    <li class="list__item"><a href="/components/feeds"><span class="slds-media slds-media--center"><span class="slds-media__body">Feeds</span></span></a></li>
+                    <li class="list__item"><a href="/components/file-selector"><span class="slds-media slds-media--center"><span class="slds-media__body">File Selector</span></span></a></li>
+                    <li class="list__item"><a href="/components/files"><span class="slds-media slds-media--center"><span class="slds-media__body">Files</span></span></a></li>
+                    <li class="list__item"><a href="/components/form-element"><span class="slds-media slds-media--center"><span class="slds-media__body">Form Element</span></span></a></li>
+                    <li class="list__item"><a href="/components/form-layout"><span class="slds-media slds-media--center"><span class="slds-media__body">Form Layout</span></span></a></li>
+                    <li class="list__item"><a href="/components/global-header"><span class="slds-media slds-media--center"><span class="slds-media__body">Global Header</span></span></a></li>
+                    <li class="list__item"><a href="/components/global-navigation"><span class="slds-media slds-media--center"><span class="slds-media__body">Global Navigation</span></span></a></li>
+                    <li class="list__item"><a href="/components/icons"><span class="slds-media slds-media--center"><span class="slds-media__body">Icons</span></span></a></li>
+                    <li class="list__item"><a href="/components/input"><span class="slds-media slds-media--center"><span class="slds-media__body">Input</span></span></a></li>
+                    <li class="list__item"><a href="/components/list-builder"><span class="slds-media slds-media--center"><span class="slds-media__body">List Builder</span></span></a></li>
+                    <li class="list__item"><a href="/components/lookups"><span class="slds-media slds-media--center"><span class="slds-media__body">Lookups</span></span></a></li>
+                    <li class="list__item"><a href="/components/map"><span class="slds-media slds-media--center"><span class="slds-media__body">Map</span></span></a></li>
+                    <li class="list__item"><a href="/components/menus"><span class="slds-media slds-media--center"><span class="slds-media__body">Menus</span></span></a></li>
+                    <li class="list__item"><a href="/components/modals"><span class="slds-media slds-media--center"><span class="slds-media__body">Modals</span></span></a></li>
+                    <li class="list__item"><a href="/components/notifications"><span class="slds-media slds-media--center"><span class="slds-media__body">Notifications</span></span></a></li>
+                    <li class="list__item"><a href="/components/page-headers"><span class="slds-media slds-media--center"><span class="slds-media__body">Page Headers</span></span></a></li>
+                    <li class="list__item"><a href="/components/panels"><span class="slds-media slds-media--center"><span class="slds-media__body">Panels</span></span></a></li>
+                    <li class="list__item"><a href="/components/path"><span class="slds-media slds-media--center"><span class="slds-media__body">Path</span></span></a></li>
+                    <li class="list__item"><a href="/components/picklist"><span class="slds-media slds-media--center"><span class="slds-media__body">Picklist</span></span></a></li>
+                    <li class="list__item"><a href="/components/pills"><span class="slds-media slds-media--center"><span class="slds-media__body">Pills</span></span></a></li>
+                    <li class="list__item"><a href="/components/popovers"><span class="slds-media slds-media--center"><span class="slds-media__body">Popovers</span></span></a></li>
+                    <li class="list__item"><a href="/components/progress-bar"><span class="slds-media slds-media--center"><span class="slds-media__body">Progress Bar</span></span></a></li>
+                    <li class="list__item"><a href="/components/progress-indicator"><span class="slds-media slds-media--center"><span class="slds-media__body">Progress Indicator</span></span></a></li>
+                    <li class="list__item"><a href="/components/progress-ring"><span class="slds-media slds-media--center"><span class="slds-media__body">Progress Ring</span></span></a></li>
+                    <li class="list__item"><a href="/components/prompt"><span class="slds-media slds-media--center"><span class="slds-media__body">Prompt</span></span></a></li>
+                    <li class="list__item"><a href="/components/publishers"><span class="slds-media slds-media--center"><span class="slds-media__body">Publishers</span></span></a></li>
+                    <li class="list__item"><a href="/components/radio-button-group"><span class="slds-media slds-media--center"><span class="slds-media__body">Radio Button Group</span></span></a></li>
+                    <li class="list__item"><a href="/components/radio-group"><span class="slds-media slds-media--center"><span class="slds-media__body">Radio Group</span></span></a></li>
+                    <li class="list__item"><a href="/components/rich-text-editor"><span class="slds-media slds-media--center"><span class="slds-media__body">Rich Text Editor</span></span></a></li>
+                    <li class="list__item"><a href="/components/scoped-notifications"><span class="slds-media slds-media--center"><span class="slds-media__body">Scoped Notifications</span></span></a></li>
+                    <li class="list__item"><a href="/components/scoped-tabs"><span class="slds-media slds-media--center"><span class="slds-media__body">Scoped Tabs</span></span></a></li>
+                    <li class="list__item"><a href="/components/select"><span class="slds-media slds-media--center"><span class="slds-media__body">Select</span></span></a></li>
+                    <li class="list__item"><a href="/components/slider"><span class="slds-media slds-media--center"><span class="slds-media__body">Slider</span></span></a></li>
+                    <li class="list__item"><a href="/components/spinners"><span class="slds-media slds-media--center"><span class="slds-media__body">Spinners</span></span></a></li>
+                    <li class="list__item"><a href="/components/split-view"><span class="slds-media slds-media--center"><span class="slds-media__body">Split View</span></span></a></li>
+                    <li class="list__item"><a href="/components/tabs"><span class="slds-media slds-media--center"><span class="slds-media__body">Tabs</span></span></a></li>
+                    <li class="list__item"><a href="/components/textarea"><span class="slds-media slds-media--center"><span class="slds-media__body">Textarea</span></span></a></li>
+                    <li class="list__item"><a href="/components/tiles"><span class="slds-media slds-media--center"><span class="slds-media__body">Tiles</span></span></a></li>
+                    <li class="list__item"><a href="/components/timepicker"><span class="slds-media slds-media--center"><span class="slds-media__body">Timepicker</span></span></a></li>
+                    <li class="list__item"><a href="/components/toast"><span class="slds-media slds-media--center"><span class="slds-media__body">Toast</span></span></a></li>
+                    <li class="list__item"><a href="/components/tooltips"><span class="slds-media slds-media--center"><span class="slds-media__body">Tooltips</span></span></a></li>
+                    <li class="list__item"><a href="/components/trees"><span class="slds-media slds-media--center"><span class="slds-media__body">Trees</span></span></a></li>
+                    <li class="list__item"><a href="/components/vertical-navigation"><span class="slds-media slds-media--center"><span class="slds-media__body">Vertical Navigation</span></span></a></li>
+                    <li class="list__item"><a href="/components/vertical-tabs"><span class="slds-media slds-media--center"><span class="slds-media__body">Vertical Tabs</span></span></a></li>
+                    <li class="list__item"><a href="/components/visual-picker"><span class="slds-media slds-media--center"><span class="slds-media__body">Visual Picker</span></span></a></li>
+                    <li class="list__item"><a href="/components/walkthrough"><span class="slds-media slds-media--center"><span class="slds-media__body">Walkthrough</span></span></a></li>
+                    </ul>
+                </li>
+                <li class="list__item site-is-closed"><a href="javascript:void(0)"><span class="slds-media slds-media--center"><span class="slds-media__body">Utilities</span><span class="slds-media__figure--reverse"><svg class="slds-icon slds-icon__svg slds-icon-utility-right slds-icon--small" aria-hidden="true" style="transform: rotate(0deg);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use></svg></span></span></a>
+                    <ul
+                    class="slds-list--vertical slds-has-block-links slds-is-nested">
+                    <li class="list__item"><a href="/utilities/alignment"><span class="slds-media slds-media--center"><span class="slds-media__body">Alignment</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/borders"><span class="slds-media slds-media--center"><span class="slds-media__body">Borders</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/box"><span class="slds-media slds-media--center"><span class="slds-media__body">Box</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/description-list"><span class="slds-media slds-media--center"><span class="slds-media__body">Description List</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/floats"><span class="slds-media slds-media--center"><span class="slds-media__body">Floats</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/grid"><span class="slds-media slds-media--center"><span class="slds-media__body">Grid</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/horizontal-list"><span class="slds-media slds-media--center"><span class="slds-media__body">Horizontal List</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/hyphenation"><span class="slds-media slds-media--center"><span class="slds-media__body">Hyphenation</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/interactions"><span class="slds-media slds-media--center"><span class="slds-media__body">Interactions</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/layout"><span class="slds-media slds-media--center"><span class="slds-media__body">Layout</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/margin"><span class="slds-media slds-media--center"><span class="slds-media__body">Margin</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/media-objects"><span class="slds-media slds-media--center"><span class="slds-media__body">Media Objects</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/name-value-list"><span class="slds-media slds-media--center"><span class="slds-media__body">Name Value List</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/padding"><span class="slds-media slds-media--center"><span class="slds-media__body">Padding</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/position"><span class="slds-media slds-media--center"><span class="slds-media__body">Position</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/scrollable"><span class="slds-media slds-media--center"><span class="slds-media__body">Scrollable</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/sizing"><span class="slds-media slds-media--center"><span class="slds-media__body">Sizing</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/text"><span class="slds-media slds-media--center"><span class="slds-media__body">Text</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/themes"><span class="slds-media slds-media--center"><span class="slds-media__body">Themes</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/truncation"><span class="slds-media slds-media--center"><span class="slds-media__body">Truncation</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/vertical-list"><span class="slds-media slds-media--center"><span class="slds-media__body">Vertical List</span></span></a></li>
+                    <li class="list__item"><a href="/utilities/visibility"><span class="slds-media slds-media--center"><span class="slds-media__body">Visibility</span></span></a></li>
+                    </ul>
+                </li>
+                <li class="list__item"><a href="/design-tokens"><span class="slds-media slds-media--center"><span class="slds-media__body">Design Tokens</span></span></a></li>
+                <li class="list__item"><a href="/icons"><span class="slds-media slds-media--center"><span class="slds-media__body">Icons</span></span></a></li>
+                <li class="list__item"><a href="/downloads"><span class="slds-media slds-media--center"><span class="slds-media__body">Downloads</span></span></a></li>
+                <li class="list__item"><a href="/articles"><span class="slds-media slds-media--center"><span class="slds-media__body">Articles</span></span></a></li>
+                <li class="list__item"><a href="/faq"><span class="slds-media slds-media--center"><span class="slds-media__body">FAQ</span></span></a></li>
+                </ul>
+                </nav>
+            </div>
+            </section>
+            <main class="site-main slds-order_1" role="main" id="content">
+                    <header class="site site-masthead slds-grid slds-wrap"><div class="site-masthead-title slds-has-flexi-truncate slds-align-middle"><span class="slds-hide docsearch-category">Getting Started</span><h1 title="Getting Started">Getting Started</h1></div></header>
+
+                    <div class="site-content site site-guidelines">
+                        <div class="slds-container_medium">
+                            <p class="site-text-introduction">The Salesforce Lightning Design System includes the resources to create user interfaces consistent with the Salesforce Lightning principles, design language, and best practices. Rather than focusing on pixels, developers can focus on application logic,
+                            while&nbsp;designers can focus on user experience, interactions, and&nbsp;flows.</p>
+                            <p>This site provides a range of resources for designers and developers, which&nbsp;includes:</p>
+                            <ul>
+                            <li>semantic and accessible component&nbsp;markup.</li>
+                            <li>cross-browser compatible&nbsp;CSS.</li>
+                            <li>icons, font, and design&nbsp;guidelines.</li>
+                            </ul>
+                        </div>
+                        <div class="slds-container--large">
+                            <div class="slds-grid slds-grid--pull-padded slds-wrap">
+                            <div class="slds-col--padded slds-size--1-of-1 slds-large-size--1-of-2 slds-small-order--1 slds-large-order--2">
+                                <h2 class="site-text-heading--large slds-p-top--xx-large">Designers</h2>
+                                <p>Start with the&nbsp;following:</p>
+                                <ol>
+                                <li>
+                                    <!-- react-text: 13597 -->Explore the
+                                    <!-- /react-text --><a href="/guidelines/overview/">Guidelines</a>
+                                    <!-- react-text: 13599 -->to learn the Salesforce product design patterns and&nbsp;principles.
+                                    <!-- /react-text -->
+                                </li>
+                                <li>Review the Components section, to familiarize yourself with the existing components which you can incorporate into your&nbsp;designs.</li>
+                                </ol>
+                            </div>
+                            <div class="slds-col--padded slds-size--1-of-1 slds-large-size--1-of-2 slds-small-order--2 slds-large-order--1">
+                                <h2 class="site-text-heading--large slds-p-top--xx-large">Developers</h2>
+                                <p>Familiarize yourself with the&nbsp;following:</p>
+                                <ol>
+                                <li>
+                                    <!-- react-text: 13606 -->Get an overview of our
+                                    <!-- /react-text -->
+                                    <!-- react-text: 13607 -->
+                                    <!-- /react-text --><a href="/guidelines/markup-and-style">Markup and Style</a>
+                                    <!-- react-text: 13609 -->
+                                    <!-- /react-text -->
+                                    <!-- react-text: 13610 -->guidelines including the class naming conventions used in our&nbsp;CSS.
+                                    <!-- /react-text -->
+                                </li>
+                                <li>Review the Components; each component provides semantically correct and accessible markup and&nbsp;documentation.</li>
+                                <li>Dive into the platform-specific getting started steps&nbsp;below.</li>
+                                </ol>
+                                <h3 class="site-text-heading--label">Lightning</h3>
+                                <p>
+                                <!-- react-text: 13615 -->Get started with the Lightning Design System on
+                                <!-- /react-text -->
+                                <!-- react-text: 13616 -->
+                                <!-- /react-text --><a href="/platforms/lightning">Lightning</a>
+                                <!-- react-text: 13618 -->. Please be careful to pay attention to the specific requirements for the Lightning technology you are&nbsp;using:
+                                <!-- /react-text -->
+                                </p>
+                                <ul>
+                                <li>Lightning&nbsp;Experience</li>
+                                <li>Salesforce1</li>
+                                <li>Stand-alone Lightning&nbsp;app</li>
+                                <li>Lightning Out&nbsp;component</li>
+                                <li>Lightning Components for Visualforce</li>
+                                </ul>
+                                <h3 class="site-text-heading--label">Visualforce</h3>
+                                <p>
+                                <!-- react-text: 13627 -->Get started with the Lightning Design System on&nbsp;
+                                <!-- /react-text --><a href="/platforms/visualforce">Visualforce</a>
+                                <!-- react-text: 13629 -->.
+                                <!-- /react-text -->
+                                </p>
+                                <h3 class="site-text-heading--label">Heroku</h3>
+                                <p>
+                                <!-- react-text: 13632 -->Get started with the Lightning Design System on&nbsp;
+                                <!-- /react-text --><a href="/platforms/heroku">Heroku</a>
+                                <!-- react-text: 13634 -->.
+                                <!-- /react-text -->
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                          
+            </main>
+            <footer class="site site-contentinfo slds-order_3">
+                <div class="slds-grid slds-wrap slds-text-body_small slds-grid_vertical-align-center" role="contentinfo">
+                    <p class="slds-p-horizontal_x-large slds-size_1-of-1 slds-shrink-none slds-large-size_3-of-4">
+                            Copyright © 2015-present Salesforce.
+                    <a href="http://salesforce.com/company/legal/intellectual.jsp">All rights reserved</a> <br/>
+                    <br>
+                    Version 2.5.0. Last Updated on January 9th 2018, 8:18 pm.
+                    </p>
+                    <p class="slds-p-horizontal--x-large slds-text-align--right slds-size--1-of-1 slds-shrink-none slds-large-size--1-of-4"><a class="site-social-twitter" href="http://twitter.com/exiasfdc" title="Follow @exiasfdc on Twitter">Twitter</a><a class="site-social-dribbble" href="http://dribbble.com/salesforce" title="Find us on Dribbble">Dribbble</a><a class="site-social-github"
+                    href="https://github.com/exiahuang/lightning-ui" title="Get the code on GitHub">GitHub Repository</a></p>
+                </div>
+            </footer>
+                  
+        </div>
+    </div>
+</body>
+</html>

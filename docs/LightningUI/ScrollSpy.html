@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lightning-UI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="author" content="Exia.huang">
+
+    <!-- Lightning-UI core CSS -->
+    <link href="../dist/styles/lightning.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <!-- <link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/jquery.min.js"><\/script>')</script>
+    <style>
+        #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+        #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+        #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+        #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+        #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+      </style>
+</head>
+<body >
+　<div id="header">
+　　<!--ここにインクルード-->
+　</div>
+
+
+<div class="main-content">
+    <div class="slds-grid slds-wrap">
+      <aside class="slds-col slds-size_1-of-4">
+  　     <div id="sidebar">
+          <div class="demo-only" style="width: 320px;">
+              <nav class="slds-nav-vertical" aria-label="Sub page">
+                <div class="slds-form-element slds-p-horizontal_large">
+                  <label class="slds-form-element__label slds-assistive-text" for="search-bar">Filter navigation items</label>
+                  <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                    <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/icons/utility-sprite/svg/symbols.svg#search" />
+                    </svg>
+                    <input type="search" id="search-bar" placeholder="Quick Find" class="slds-input" />
+                  </div>
+                </div>
+                <div class="slds-nav-vertical__section">
+                  <h2 class="slds-nav-vertical__title slds-text-title_caps">My Menu</h2>
+                  <ul id="side-bar-menu" >
+                      <li class="slds-nav-vertical__item"><a href="/examples/lightning-table.html" class="slds-nav-vertical__action" aria-describedby="entity-header">DataTable</a></li>
+                      <li class="slds-nav-vertical__item"><a href="/examples/modal.html" class="slds-nav-vertical__action" aria-describedby="entity-header">Modal</a></li>
+                      
+                  </ul>
+                </div>
+              </nav>
+            </div>
+      　</div>
+      </aside>
+      <main class="slds-col slds-size_3-of-4">
+          <div class="site site-main-content slds-col slds-col--rule-right slds-size--1-of-1 slds-large-size--9-of-12 slds-large-order--1">
+        <!-- Trigger the modal with a button -->
+          <div id="navbar-example" class="slds-context-bar ">
+            <div class="slds-context-bar__primary">
+              <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
+                <div class="slds-context-bar__icon-action">
+                  <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Description of the icon when needed">
+                    <span class="slds-icon-waffle">
+                      <span class="slds-r1"></span>
+                      <span class="slds-r2"></span>
+                      <span class="slds-r3"></span>
+                      <span class="slds-r4"></span>
+                      <span class="slds-r5"></span>
+                      <span class="slds-r6"></span>
+                      <span class="slds-r7"></span>
+                      <span class="slds-r8"></span>
+                      <span class="slds-r9"></span>
+                    </span>
+                    <span class="slds-assistive-text">Open App Launcher</span>
+                  </button>
+                </div>
+                <span class="slds-context-bar__label-action slds-context-bar__app-name">
+                  <span class="slds-truncate" title="App Name">ScrollSpy App</span>
+                </span>
+              </div>
+            </div>
+            <nav class="slds-context-bar__secondary" role="navigation">
+              <ul class="slds-grid">
+                <li class="slds-context-bar__item">
+                  <a href="#section1" class="slds-context-bar__label-action" title="section1">
+                    <span class="slds-truncate" title="section1">Section1</span>
+                  </a>
+                </li>
+                <li class="slds-context-bar__item">
+                  <a href="#section2" class="slds-context-bar__label-action" title="section2">
+                    <span class="slds-truncate" title="section2">Section2</span>
+                  </a>
+                </li>
+                <li class="slds-context-bar__item">
+                  <a href="#section3" class="slds-context-bar__label-action" title="section3">
+                    <span class="slds-truncate" title="section3">Section3</span>
+                  </a>
+                </li>
+                <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_hover">
+                    <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Section4">
+                      <span class="slds-truncate" title="Section4">Section4</span>
+                    </a>
+                    <div class="slds-context-bar__icon-action slds-p-left_none">
+                      <button class="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="Open menu item submenu">
+                        <svg class="slds-button__icon" aria-hidden="true">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#chevrondown" />
+                        </svg>
+                        <span class="slds-assistive-text">Open menu item submenu</span>
+                      </button>
+                    </div>
+                    <div class="slds-dropdown slds-dropdown_right">
+                      <ul class="slds-dropdown__list" role="menu">
+                        <li class="slds-dropdown__item" role="presentation" style="list-style:none">
+                          <a href="#section41" role="menuitem" tabindex="-1">
+                            <span class="slds-truncate" title="Section41">Section41</span>
+                          </a>
+                        </li>
+                        <li class="slds-dropdown__item" role="presentation" style="list-style:none">
+                          <a href="#section42" role="menuitem" tabindex="-1">
+                            <span class="slds-truncate" title="Section42">Section42</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+              </ul>
+            </nav>
+          </div>
+          
+          <div data-spy="scroll" data-target="#navbar-example" data-offset="0" style="height:500px;overflow:auto; position: relative;">
+              <div id="section1" class="container-fluid">
+                  <h1>Section 1</h1>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                </div>
+                <div id="section2" class="container-fluid">
+                  <h1>Section 2</h1>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                </div>
+                <div id="section3" class="container-fluid">
+                  <h1>Section 3</h1>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                </div>
+                <div id="section41" class="container-fluid">
+                  <h1>Section 4 Submenu 1</h1>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                </div>
+                <div id="section42" class="container-fluid">
+                  <h1>Section 4 Submenu 2</h1>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                </div>
+          </div>
+          </div>
+        
+      </main>
+    </div>
+  </div>
+  
+
+
+　<div id="footer">
+    　　<!--ここにインクルード-->
+  </div>
+
+  
+  <script src="../js/index.js"></script>
+  <script src="../dist/lightning-ui.js"></script>
+</body>
+</html>

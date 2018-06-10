@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lightning-UI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="author" content="Exia.huang">
+
+    <!-- Lightning-UI core CSS -->
+    <link href="../dist/styles/lightning.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <!-- <link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/jquery.min.js"><\/script>')</script>
+    
+</head>
+<body>
+　<div id="header">
+　　<!--ここにインクルード-->
+　</div>
+
+
+<div class="main-content">
+    <div class="slds-grid slds-wrap">
+      <aside class="slds-col slds-size_1-of-4">
+  　     <div id="sidebar">
+          <div class="demo-only" style="width: 320px;">
+              <nav class="slds-nav-vertical" aria-label="Sub page">
+                <div class="slds-form-element slds-p-horizontal_large">
+                  <label class="slds-form-element__label slds-assistive-text" for="search-bar">Filter navigation items</label>
+                  <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                    <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/icons/utility-sprite/svg/symbols.svg#search" />
+                    </svg>
+                    <input type="search" id="search-bar" placeholder="Quick Find" class="slds-input" />
+                  </div>
+                </div>
+                <div class="slds-nav-vertical__section">
+                  <h2 class="slds-nav-vertical__title slds-text-title_caps">My Menu</h2>
+                  <ul id="side-bar-menu" >
+                      <li class="slds-nav-vertical__item"><a href="/examples/lightning-table.html" class="slds-nav-vertical__action" aria-describedby="entity-header">DataTable</a></li>
+                      <li class="slds-nav-vertical__item"><a href="/examples/modal.html" class="slds-nav-vertical__action" aria-describedby="entity-header">Modal</a></li>
+                      
+                  </ul>
+                </div>
+              </nav>
+            </div>
+      　</div>
+      </aside>
+      <main class="slds-col slds-size_3-of-4">
+        <!-- Trigger the modal with a button -->
+        <div class="demo-only" style="height: 260px;">
+          <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+            <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Show More" data-toggle="dropdown">
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#down" />
+              </svg>
+              <span class="slds-assistive-text">Show More</span>
+            </button>
+            <div class="slds-dropdown slds-dropdown_left slds-dropdown_small">
+              <ul class="slds-dropdown__list" role="menu">
+                <li class="slds-dropdown__header slds-truncate" title="Menu Sub Heading" role="separator">
+                  <span class="slds-text-title_caps">Menu Sub Heading</span>
+                </li>
+                <li class="slds-dropdown__item" role="presentation">
+                  <a href="javascript:void(0);" role="menuitem" tabindex="0">
+                    <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+                  </a>
+                </li>
+                <li class="slds-dropdown__item" role="presentation">
+                  <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                    <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+                  </a>
+                </li>
+                <li class="slds-dropdown__header slds-truncate" title="Menu Sub Heading" role="separator">
+                  <span class="slds-text-title_caps">Menu Sub Heading</span>
+                </li>
+                <li class="slds-dropdown__item" role="presentation">
+                  <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                    <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+                  </a>
+                </li>
+                <li class="slds-dropdown__item" role="presentation">
+                  <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                    <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  
+
+
+　<div id="footer">
+    　　<!--ここにインクルード-->
+  </div>
+
+  
+  <script src="../js/index.js"></script>
+  <script src="../dist/lightning-ui.js"></script>
+</body>
+</html>

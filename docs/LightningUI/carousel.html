@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lightning-UI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="author" content="Exia.huang">
+
+    <!-- Lightning-UI core CSS -->
+    <link href="../dist/styles/lightning.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <!-- <link href="{{ site.baseurl }}../dist/css/docs.css" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../dist/js/vendor/jquery.min.js"><\/script>')</script>
+    <style>
+        .tip-demo {
+          margin: 60px;
+        }
+    </style>
+</head>
+<body>
+　<div id="header">
+　　<!--ここにインクルード-->
+　</div>
+
+
+<div class="main-content">
+    <div class="slds-grid slds-wrap">
+      <aside class="slds-col slds-size_1-of-4">
+  　     <div id="sidebar">
+          <div class="demo-only" style="width: 320px;">
+              <nav class="slds-nav-vertical" aria-label="Sub page">
+                <div class="slds-form-element slds-p-horizontal_large">
+                  <label class="slds-form-element__label slds-assistive-text" for="search-bar">Filter navigation items</label>
+                  <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                    <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/icons/utility-sprite/svg/symbols.svg#search" />
+                    </svg>
+                    <input type="search" id="search-bar" placeholder="Quick Find" class="slds-input" />
+                  </div>
+                </div>
+                <div class="slds-nav-vertical__section">
+                  <h2 class="slds-nav-vertical__title slds-text-title_caps">My Menu</h2>
+                  <ul id="side-bar-menu" >
+                      <li class="slds-nav-vertical__item"><a href="/examples/lightning-table.html" class="slds-nav-vertical__action" aria-describedby="entity-header">DataTable</a></li>
+                      <li class="slds-nav-vertical__item"><a href="/examples/modal.html" class="slds-nav-vertical__action" aria-describedby="entity-header">Modal</a></li>
+                      
+                  </ul>
+                </div>
+              </nav>
+            </div>
+      　</div>
+      </aside>
+      <main class="slds-col slds-size_3-of-4">
+          <div style="width: 480px; max-width: 100%;">
+          <div class="slds-carousel" id="carousel-example-generic" data-ride="carousel">
+              <div class="slds-carousel__stage">
+                <span class="slds-carousel__autoplay">
+                  <button class="slds-button slds-button_icon slds-button_icon-border-filled slds-button_icon-x-small" aria-pressed="false" title="Stop auto-play">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                      <use xlink:href="../dist/icons/utility-sprite/svg/symbols.svg#pause"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Stop auto-play</span>
+                  </button>
+                </span>
+                <div class="slds-carousel__panels" style="transform:translateX(-0%);">
+                  <div id="content-id-01" class="slds-carousel__panel" role="tabpanel" aria-hidden="true" aria-labelledby="indicator-id-01">
+                    <a href="javascript:void(0);" class="slds-carousel__panel-action slds-text-link_reset">
+                      <div class="slds-carousel__image">
+                        <img src="../dist/images/carousel/carousel-01.jpg" alt="Visit App Exchange" />
+                      </div>
+                      <div class="slds-carousel__content">
+                        <h2 class="slds-carousel__content-title">Visit App Exchange</h2>
+                        <p>Extend Salesforce with the #1 business marketplace.</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="content-id-02" class="slds-carousel__panel" role="tabpanel" aria-hidden="false" aria-labelledby="indicator-id-02">
+                    <a href="javascript:void(0);" class="slds-carousel__panel-action slds-text-link_reset">
+                      <div class="slds-carousel__image">
+                        <img src="../dist/images/carousel/carousel-02.jpg" alt="Click to Customize" />
+                      </div>
+                      <div class="slds-carousel__content">
+                        <h2 class="slds-carousel__content-title">Click to Customize</h2>
+                        <p>Use the Object Manager to add fields, build layouts, and more.</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="content-id-03" class="slds-carousel__panel" role="tabpanel" aria-hidden="false" aria-labelledby="indicator-id-03">
+                    <a href="javascript:void(0);" class="slds-carousel__panel-action slds-text-link_reset" >
+                      <div class="slds-carousel__image">
+                        <img src="../dist/images/carousel/carousel-03.jpg" alt="Download SalesforceA" />
+                      </div>
+                      <div class="slds-carousel__content">
+                        <h2 class="slds-carousel__content-title">Download SalesforceA</h2>
+                        <p>Get the mobile app that&#x27;s just for Salesforce admins.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <ul class="slds-carousel__indicators" role="tablist">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="slds-carousel__indicator" role="presentation">
+                    <a id="indicator-id-01" class="slds-carousel__indicator-action slds-is-active" href="#carousel-example-generic" role="tab" aria-selected="true" aria-controls="content-id-01" title="Visit App Exchange tab">
+                      <span class="slds-assistive-text">Visit App Exchange tab</span>
+                    </a>
+                  </li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" class="slds-carousel__indicator" role="presentation">
+                    <a id="indicator-id-02" class="slds-carousel__indicator-action" href="#carousel-example-generic" role="tab"  aria-selected="false" aria-controls="content-id-02" title="Click to Customize tab">
+                      <span class="slds-assistive-text">Click to Customize tab</span>
+                    </a>
+                  </li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" class="slds-carousel__indicator" role="presentation">
+                    <a id="indicator-id-03" class="slds-carousel__indicator-action" href="#carousel-example-generic" role="tab"  aria-selected="false" aria-controls="content-id-03" title="Download SalesforceA tab">
+                      <span class="slds-assistive-text">Download SalesforceA tab</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+      </main>
+    </div>
+  </div>
+  
+
+
+　<div id="footer">
+    　　<!--ここにインクルード-->
+  </div>
+
+  
+  <script src="../js/index.js"></script>
+  <script src="../dist/lightning-ui.js"></script>
+  <script>
+    $('.slds-carousel').carousel({
+      interval: 2000
+    })
+  </script>
+</body>
+</html>

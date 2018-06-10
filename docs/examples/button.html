@@ -1,0 +1,52 @@
+---
+layout: slds-layout
+title: Button
+---
+<div class="site-content">
+    <div class="slds-container_medium">
+        <h1 class="site-text-heading--large slds-p-top--xx-large">Example Buttons</h1>
+        <main>
+        <!-- Trigger the modal with a button -->
+        <div class="slds-button-group tip-demo" role="group">
+          <button type="button" id="myButton" data-loading-text="Loading..." class="slds-button slds-button_brand" autocomplete="off">Loading state</button>
+          <button type="button" id="myButton" data-loading-text="Loading..." class="slds-button slds-button_neutral" autocomplete="off">Loading state</button>
+          <button type="button" id="myButton" data-loading-text="Loading..." class="slds-button slds-button_destructive" autocomplete="off">Loading state</button>
+          <button type="button" id="myButton" data-loading-text="Loading..." class="slds-button slds-button_success" autocomplete="off">Loading state</button>
+        </div>
+      </main>
+    </div>
+
+    <div class="slds-container_large">
+        <h1 class="site-text-heading--large slds-p-top--xx-large">Stateful</h1>
+        <p>Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.</p>
+        <p>For the sake of this demonstration, we are using <code>data-loading-text</code> and <code>$().button('loading')</code>, but that's not the only state you can use. </p>
+
+{% highlight html %}
+<button type="button" id="myButton" data-loading-text="Loading..." class="slds-button slds-button_brand" autocomplete="off">Loading state</button>
+<button type="button" id="myButton" data-loading-text="Loading..." class="slds-button slds-button_neutral" autocomplete="off">Loading state</button>
+<button type="button" id="myButton" data-loading-text="Loading..." class="slds-button slds-button_destructive" autocomplete="off">Loading state</button>
+<button type="button" id="myButton" data-loading-text="Loading..." class="slds-button slds-button_success" autocomplete="off">Loading state</button>
+<script>
+    $('.slds-button').on('click', function () {
+    console.log('>>>click')
+    var $btn = $(this).button('loading').delay(1000).queue(function() {
+        $btn.button('reset')
+        $(this).dequeue();
+    });        
+    })
+</script>
+{% endhighlight %}
+    </div>
+
+</div>
+
+
+<script>
+    $('.slds-button').on('click', function () {
+      console.log('>>>click')
+      var $btn = $(this).button('loading').delay(1000).queue(function() {
+          $btn.button('reset')
+          $(this).dequeue();
+      });        
+    })
+</script>

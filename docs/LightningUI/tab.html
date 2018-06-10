@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lightning-UI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="author" content="Exia.huang">
+
+    <!-- Lightning-UI core CSS -->
+    <link href="../dist/styles/lightning.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <!-- <link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/jquery.min.js"><\/script>')</script>
+    
+    <!-- 　<script type="text/javascript">
+    　　$(function(){
+    　　})
+    　</script> -->
+</head>
+<body>
+　<div id="header">
+　　<!--ここにインクルード-->
+　</div>
+
+
+<div class="main-content">
+    <div class="slds-grid slds-wrap">
+      <aside class="slds-col slds-size_1-of-4">
+  　     <div id="sidebar">
+          <div class="demo-only" style="width: 320px;">
+              <nav class="slds-nav-vertical" aria-label="Sub page">
+                <div class="slds-form-element slds-p-horizontal_large">
+                  <label class="slds-form-element__label slds-assistive-text" for="search-bar">Filter navigation items</label>
+                  <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                    <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/icons/utility-sprite/svg/symbols.svg#search" />
+                    </svg>
+                    <input type="search" id="search-bar" placeholder="Quick Find" class="slds-input" />
+                  </div>
+                </div>
+                <div class="slds-nav-vertical__section">
+                  <h2 class="slds-nav-vertical__title slds-text-title_caps">My Menu</h2>
+                  <ul id="side-bar-menu" >
+                      <li class="slds-nav-vertical__item"><a href="/examples/lightning-table.html" class="slds-nav-vertical__action" aria-describedby="entity-header">DataTable</a></li>
+                      <li class="slds-nav-vertical__item"><a href="/examples/modal.html" class="slds-nav-vertical__action" aria-describedby="entity-header">Modal</a></li>
+                      
+                  </ul>
+                </div>
+              </nav>
+            </div>
+      　</div>
+      </aside>
+      <main class="slds-col slds-size_3-of-4">
+        <!-- A tab keeps related content in a single container that is shown and hidden through navigation. -->
+        <div class="slds-tabs_default">
+          <ul class="nav nav-tabs slds-tabs_default__nav" role="tablist">
+            <li class="slds-tabs_default__item slds-is-active" title="Item One" role="presentation"><a class="slds-tabs_default__link" href="#tab-default-1" role="tab" tabindex="0" aria-controls="tab-default-1" id="tab-default-1__item" data-toggle="tab">Item One</a></li>
+            <li class="slds-tabs_default__item" title="Item Two" role="presentation"><a class="slds-tabs_default__link" href="#tab-default-2" role="tab" tabindex="-1" aria-controls="tab-default-2" id="tab-default-2__item" data-toggle="tab">Item Two</a></li>
+            <li class="slds-tabs_default__item" title="Item Three" role="presentation"><a class="slds-tabs_default__link" href="#tab-default-3" role="tab" tabindex="-1" aria-controls="tab-default-3" id="tab-default-3__item" data-toggle="tab">Item Three</a></li>
+          </ul>
+          <div id="tab-default-1" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+            Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+          </div>
+          <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
+            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+          </div>
+          <div id="tab-default-3" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item">Item Three Content</div>
+        </div>
+        
+      </main>
+    </div>
+  </div>
+  
+
+
+　<div id="footer">
+    　　<!--ここにインクルード-->
+  </div>
+
+  
+  <script src="../js/index.js"></script>
+  <script src="../dist/lightning-ui.js"></script>
+</body>
+</html>

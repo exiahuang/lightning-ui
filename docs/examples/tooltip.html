@@ -1,0 +1,61 @@
+---
+layout: slds-layout
+title: Tooltip
+---
+
+<div class="site-content">
+  <div class="slds-container_medium">
+    <h1 class="site-text-heading--large slds-p-top--xx-large">Example Tooltip</h1>
+    <main class="slds-modal__container">
+
+      <div class="slds-p-top_medium" role="group">
+        <button type="button" class="slds-button slds-button_neutral" data-toggle="tooltip" data-placement="left" title="Tooltip on left1">Tooltip on left</button>
+      </div>
+      <div class="slds-p-top_medium" role="group">
+        <button type="button" class="slds-button slds-button_neutral" data-toggle="tooltip" data-placement="top" title="Tooltip on top2">Tooltip on top</button>
+      </div>
+      <div class="slds-p-top_medium" role="group">
+        <button type="button" class="slds-button slds-button_neutral" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom3">Tooltip on bottom</button>
+      </div>
+      <div class="slds-p-top_medium" role="group">
+        <button type="button" class="slds-button slds-button_neutral" data-toggle="tooltip" data-placement="right" title="Tooltip on right4">Tooltip on right</button>
+      </div>
+    </main>
+  </div>
+
+  <div class="slds-container_large">
+      <h1 class="site-text-heading--large slds-p-top--xx-large">Usage</h1>
+
+{% highlight html %}
+
+
+<div class="slds-p-top_medium" role="group">
+  <button type="button" class="slds-button slds-button_neutral" data-toggle="tooltip" data-placement="left" title="Tooltip on left1">Tooltip on left</button>
+</div>
+<div class="slds-p-top_medium" role="group">
+  <button type="button" class="slds-button slds-button_neutral" data-toggle="tooltip" data-placement="top" title="Tooltip on top2">Tooltip on top</button>
+</div>
+<div class="slds-p-top_medium" role="group">
+  <button type="button" class="slds-button slds-button_neutral" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom3">Tooltip on bottom</button>
+</div>
+<div class="slds-p-top_medium" role="group">
+  <button type="button" class="slds-button slds-button_neutral" data-toggle="tooltip" data-placement="right" title="Tooltip on right4">Tooltip on right</button>
+</div>
+
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+{% endhighlight %}
+  </div>
+
+</div>
+
+
+
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>

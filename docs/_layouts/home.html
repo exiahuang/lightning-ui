@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include header.html %}
+  </head>
+  <body class="bs-docs-home">
+    <div class="slds-grid slds-wrap">
+      <nav class="slds-col slds-size--1-of-1">
+        {% include nav/main.html %}
+      </nav>
+      <main class="slds-col slds-size--1-of-1">
+        {{ content }}
+      </main>
+      <div class="slds-col slds-size--1-of-1">
+        {% include footer.html %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+---
+layout: slds-layout
+title: DropDown
+---
+<div class="site-content">
+    <div class="slds-container_medium">
+      <h1 class="site-text-heading--large slds-p-top--xx-large">Example DropDown</h1>
+      <main>
+        <!-- Trigger the modal with a button -->
+        <div class="demo-only" style="height: 260px;">
+            <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+              <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Show More" data-toggle="dropdown">
+                <svg class="slds-button__icon" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#down" />
+                </svg>
+                <span class="slds-assistive-text">Show More</span>
+              </button>
+              <div class="slds-dropdown slds-dropdown_left slds-dropdown_small">
+                <ul class="slds-dropdown__list" role="menu">
+                  <li class="slds-dropdown__header slds-truncate" title="Menu Sub Heading" role="separator">
+                    <span class="slds-text-title_caps">Menu Sub Heading</span>
+                  </li>
+                  <li class="slds-dropdown__item" role="presentation">
+                    <a href="javascript:void(0);" role="menuitem" tabindex="0">
+                      <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+                    </a>
+                  </li>
+                  <li class="slds-dropdown__item" role="presentation">
+                    <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                      <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+                    </a>
+                  </li>
+                  <li class="slds-dropdown__header slds-truncate" title="Menu Sub Heading" role="separator">
+                    <span class="slds-text-title_caps">Menu Sub Heading</span>
+                  </li>
+                  <li class="slds-dropdown__item" role="presentation">
+                    <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                      <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+                    </a>
+                  </li>
+                  <li class="slds-dropdown__item" role="presentation">
+                    <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                      <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </main>
+    </div>
+      
+  <div class="slds-container_large">
+      <h1 class="site-text-heading--large slds-p-top--xx-large">Usage</h1>
+
+{% highlight html %}
+<div class="demo-only" style="height: 260px;">
+    <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+      <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Show More" data-toggle="dropdown">
+        <svg class="slds-button__icon" aria-hidden="true">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/dist/icons/utility-sprite/svg/symbols.svg#down" />
+        </svg>
+        <span class="slds-assistive-text">Show More</span>
+      </button>
+      <div class="slds-dropdown slds-dropdown_left slds-dropdown_small">
+        <ul class="slds-dropdown__list" role="menu">
+          <li class="slds-dropdown__header slds-truncate" title="Menu Sub Heading" role="separator">
+            <span class="slds-text-title_caps">Menu Sub Heading</span>
+          </li>
+          <li class="slds-dropdown__item" role="presentation">
+            <a href="javascript:void(0);" role="menuitem" tabindex="0">
+              <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+            </a>
+          </li>
+          <li class="slds-dropdown__item" role="presentation">
+            <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+              <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+            </a>
+          </li>
+          <li class="slds-dropdown__header slds-truncate" title="Menu Sub Heading" role="separator">
+            <span class="slds-text-title_caps">Menu Sub Heading</span>
+          </li>
+          <li class="slds-dropdown__item" role="presentation">
+            <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+              <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+            </a>
+          </li>
+          <li class="slds-dropdown__item" role="presentation">
+            <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+              <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endhighlight %}
+
+  </div>
+</div>

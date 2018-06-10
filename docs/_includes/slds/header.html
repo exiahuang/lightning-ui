@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="LightningUI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="author" content="Exia.huang, and LightningUI contributors">
+
+<!-- Lightning-UI core CSS -->
+
+<!-- LightningUI core CSS -->
+{% if site.github %}
+  <link href="{{ site.baseurl }}/dist/styles/lightning.css" rel="stylesheet">
+{% else %}
+  <link href="{{ site.baseurl }}/dist/styles/lightning.css" rel="stylesheet">
+{% endif %}
+
+<link href="{{ site.baseurl }}/assets/css/docs-2.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/jquery.min.js"><\/script>')</script>
+<!-- <link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet">
+ -->
+ 
+<title>
+  {% if page.layout == "home" %}
+    {{ page.title }}
+  {% else %}
+    {{ page.title }} &middot; LightningUI
+  {% endif %}
+</title>
+
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+<link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+
+<!-- TODO Add google  -->

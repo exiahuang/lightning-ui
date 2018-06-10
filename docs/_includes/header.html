@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="LightningUI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="author" content="Exia.huang, and LightningUI contributors">
+
+<title>
+  {% if page.layout == "home" %}
+    {{ page.title }}
+  {% else %}
+    {{ page.title }} &middot; LightningUI
+  {% endif %}
+</title>
+
+<!-- LightningUI core CSS -->
+{% if site.github %}
+  <link href="{{ site.baseurl }}/dist/styles/lightning.min.css" rel="stylesheet">
+{% else %}
+  <link href="{{ site.baseurl }}/dist/styles/lightning.css" rel="stylesheet">
+{% endif %}
+
+{% if page.slug == "css" or page.slug == "components" or page.slug == "js" %}
+  <!-- Optional LightningUI Theme -->
+    <link href="data:text/css;charset=utf-8," data-href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet" id="lui-theme-stylesheet">
+{% endif %}
+<!-- 
+{% if page.slug == "getting-started" or page.slug == "css" or page.slug == "components" or page.slug == "js" %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css">
+{% endif %} -->
+
+<!-- Documentation extras -->
+<link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="{{ site.baseurl }}/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="{{ site.baseurl }}/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+<link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+
+<!-- TODO Add google  -->

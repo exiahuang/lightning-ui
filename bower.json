@@ -1,0 +1,28 @@
+{
+  "name": "lightning-ui",
+  "version": "1.0.0",
+  "description": "lightning-ui",
+  "main": "dist/main.js",
+  "author": {
+    "name": "exia.huang",
+    "email": "exia.sfdc@hotmail.com"
+  },
+  "repository": {
+    "url": "",
+    "type": "git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests",
+    "test-infra"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "lightning-ui",
+  "version": "1.0.0",
+  "description": "lightning-ui",
+  "main": "dist/main.js",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "exia.huang",
+    "email": "exia.sfdc@hotmail.com"
+  },
+  "repository": {
+    "url": "",
+    "type": "git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-conventional-changelog": "^6.1.0",
+    "grunt-csscomb": "^3.1.1",
+    "grunt-exec": "^3.0.0",
+    "grunt-groc": "^0.7.1",
+    "grunt-html": "^8.6.1",
+    "grunt-jekyll": "^0.4.6",
+    "grunt-jscs": "^3.0.1",
+    "grunt-saucelabs": "^9.0.0",
+    "grunt-standard": "2.0.0",
+    "grunt-umd": "^2.3.0",
+    "load-grunt-config": "^0.19.2",
+    "time-grunt": "^1.4.0"
+  },
+  "dependencies": {
+    "grunt-jekyll": "^0.4.6"
+  }
+}

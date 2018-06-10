@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lightning-UI, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="author" content="Exia.huang">
+
+    <!-- Lightning-UI core CSS -->
+    <link href="dist/styles/lightning.css" rel="stylesheet" />
+    <link href="css/docs.css" rel="stylesheet" />
+    <!-- <link href="assets/prism.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <!-- <link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+</head>
+<body>
+　<div id="header">
+　　<!--ここにインクルード-->
+　</div>
+
+
+<div class="main-content">
+    <div class="slds-grid slds-wrap">
+      <aside class="slds-col slds-size_1-of-5">
+      </aside>
+      <main class="slds-col slds-size_4-of-5">
+        <!-- Trigger the modal with a button -->
+        <pre><code class="php">
+            function action() {
+              parent::action();
+           
+              $this->prev_page = $this->objNavi->arrPagenavi[before];
+              $this->next_page = $this->objNavi->arrPagenavi[next];
+            }
+          </code></pre>
+      </main>
+    </div>
+  </div>
+
+  {% highlight ruby %}
+  def foo
+    puts 'fooxxx'
+  end
+  {% endhighlight %}
+  
+
+
+　<div id="footer">
+    　　<!--ここにインクルード-->
+  </div>
+
+  
+  <script src="js/index.js"></script>
+  <script src="dist/lightning-ui.js"></script>
+  <!-- <script src="assets/prism.js"></script> -->
+</body>
+</html>

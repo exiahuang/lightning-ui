@@ -1,0 +1,33 @@
+
+.slds-global-header__logo {
+  width: 12.5rem;
+  height: 2.5rem;
+  background-image: url("/dist/images/logo-noname.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center; 
+}
+ 
+.main-content {
+    /* left: 0;
+    right: 0; */
+    /* overflow: visible; */
+    z-index: 0;
+    padding-top: 100px;
+
+    overflow: hidden;
+    /* float: right; */
+  }
+
+
+
+
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages, save the homepage.
+ */
+ 
+.site.site-contentinfo {
+  margin-left : 0px;
+}
