@@ -14,8 +14,11 @@ http://salesforcexytools.com/lightning-ui/LightningUI/
 ## SLDS Style
 http://salesforcexytools.com/lightning-ui/examples/
 
-## Download
+## Download From github
 https://github.com/exiahuang/lightning-ui
+
+https://github.com/exiahuang/lightning-ui/releases
+
 
 # How to build source ?
 ## Requirements
