@@ -7,3 +7,4 @@ coverage
 report
 _gh_pages
 bower_components
+package-lock.json
